@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生日祝福</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 生日横幅 -->
+        <div class="birthday-banner">
+            <h1 class="birthday-title">生日快乐，李紫菥！🎉</h1>
+            <img src="https://i.loli.net/2025/11/20/vhF9DrQyl8R7bZj.jpg" alt="生日快乐" class="birthday-image"/>
+            <div class="confetti"></div>
+        </div>
+
+        <!-- 祝福信息 -->
+        <div class="message">
+            <p class="text">今天是你的特别日子，愿你所有的努力都能有美好的回报！🎂</p>
+            <p class="text">高三的岁月或许压力山大，但你永远是最闪亮的星星！🌟</p>
+            <button class="button" onclick="showMessage()">点击激活生日祝福！</button>
+        </div>
+
+        <!-- 鼓励与祝福 -->
+        <div class="encouragement">
+            <h2>鼓励语录：</h2>
+            <p class="quote">“成功不在于你开始的早，而在于你坚持的久。”</p>
+            <p class="quote">“高三是你人生的一个转折点，勇敢追梦，你会看到最美的风景。”</p>
+            <p class="quote">“你的一切努力，都会变成闪亮的星星，照亮你的未来。”</p>
+        </div>
+
+        <!-- 弹出祝福框 -->
+        <div class="popup" id="popup">
+            <div class="popup-content">
+                <p class="popup-text">愿你在这特别的日子里，所有的努力都有美好回报，未来光辉灿烂！💪</p>
+                <button class="button" onclick="closePopup()">感谢祝福！</button>
+            </div>
+        </div>
+
+        <!-- 小游戏 -->
+        <div class="game">
+            <h2>点击气球，送上生日祝福！🎈</h2>
+            <div class="balloon-container">
+                <div class="balloon" onclick="popBalloon()"></div>
+                <div class="balloon" onclick="popBalloon()"></div>
+                <div class="balloon" onclick="popBalloon()"></div>
+            </div>
+        </div>
+
+        <!-- 二维码区域 -->
+        <div class="qr-code-container">
+            <p>扫描下方二维码，查看生日祝福页面！</p>
+            <div id="qrcode"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs2@0.0.0/dist/qrcode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
